@@ -1,0 +1,174 @@
+{
+  "ankara": [
+    {
+      "id": 1,
+      "name": "Tarhan Geri Dönüşüm",
+      "district": "Yenimahalle",
+      "location": {
+        "lat": 39.95882599999999,
+        "lng": 32.8156729
+      },
+      "type": ["cardboard", "paper"]
+    },
+    {
+      "id": 2,
+      "name": "Tuğra Plastik Geri Dönüşüm",
+      "district": "Yenimahalle",
+      "location": {
+        "lat": 39.9672646,
+        "lng": 32.7563136
+      },
+      "type": ["plastic"]
+    },
+    {
+      "id": 3,
+      "name": "İlkem Çevre Geri Dönüşüm",
+      "district": "Yenimahalle",
+      "location": {
+        "lat": 39.96529779999999,
+        "lng": 32.7481407
+      },
+      "type": ["metal"]
+    },
+    {
+      "id": 4,
+      "name": "DERİN KAĞIT",
+      "district": "Yenimahalle",
+      "location": {
+        "lat": 39.9566469,
+        "lng": 32.7584443
+      },
+      "type": ["paper", "cardboard"]
+    },
+    {
+      "id": 5,
+      "name": "Ankara Çankaya Hurda",
+      "district": "Çankaya",
+      "location": {
+        "lat": 39.9466508,
+        "lng": 32.8432146
+      },
+      "type": ["metal", "cardboard", "paper", "other"]
+    },
+    {
+      "id": 6,
+      "name": "Cansu Hurdacılık",
+      "district": "Altındağ",
+      "location": {
+        "lat": 39.9488539,
+        "lng": 32.8441413
+      },
+      "type": ["metal", "cardboard", "paper"]
+    },
+    {
+      "id": 7,
+      "name": "Kemaloğlu Hurdacılık - Metal - Malzeme - Ankara Hurda",
+      "district": "Yenimahalle",
+      "location": {
+        "lat": 39.892379,
+        "lng": 32.7677681
+      },
+      "type": ["metal"]
+    },
+    {
+      "id": 8,
+      "name": "ÇEVNAK GERİ DÖNÜŞÜM",
+      "district": "Çankaya",
+      "location": {
+        "lat": 39.8611642,
+        "lng": 32.8794829
+      },
+      "type": ["metal", "glass", "paper", "cardboard", "plastic", "other"]
+    },
+    {
+      "id": 9,
+      "name": "KESER GERİ DÖNÜŞÜM",
+      "district": "Yenimahalle",
+      "location": {
+        "lat": 40.0219868,
+        "lng": 32.7629774
+      },
+      "type": ["metal", "glass", "paper", "cardboard", "plastic", "other"]
+    },
+    {
+      "id": 10,
+      "name": "ATABEY GERİ DÖNÜŞÜM",
+      "district": "Yenimahalle",
+      "location": {
+        "lat": 39.9967946,
+        "lng": 32.7666787
+      },
+      "type": ["metal", "glass", "paper", "cardboard", "plastic", "other"]
+    },
+    {
+      "id": 11,
+      "name": "Emka Geri Dönüşüm Atık Geri Kazanım Tesisi",
+      "district": "Yenimahalle",
+      "location": {
+        "lat": 40.0161166,
+        "lng": 32.7588218
+      },
+      "type": ["metal"]
+    },
+    {
+      "id": 12,
+      "name": "BİRCANLAR KATI ATIK GERİ DÖN. ",
+      "district": "Sincan",
+      "location": {
+        "lat": 39.1492715,
+        "lng": 31.6888155
+      },
+      "type": ["metal", "glass", "paper", "cardboard", "plastic", "other"]
+    },
+    {
+      "id": 13,
+      "name": "MOROĞLU GERİ DÖNÜŞÜM ",
+      "district": "Akyurt",
+      "location": {
+        "lat": 40.1248969,
+        "lng": 33.0601566
+      },
+      "type": ["metal", "glass", "paper", "cardboard", "plastic"]
+    },
+    {
+      "id": 14,
+      "name": "SAFİR GERİ DÖNÜŞÜM ",
+      "district": "Yenimahalle",
+      "location": {
+        "lat": 40.0221667,
+        "lng": 32.7642237
+      },
+      "type": ["metal", "glass", "paper", "cardboard", "plastic"]
+    },
+    {
+      "id": 15,
+      "name": "MÜDÜROĞLU GERİ DÖNÜŞÜM ",
+      "district": "Yenimahalle",
+      "location": {
+        "lat": 40.024218,
+        "lng": 32.7675759
+      },
+      "type": ["metal", "glass", "paper", "cardboard", "plastic"]
+    },
+    {
+      "id": 16,
+      "name": "Sezgen Metal & Hurda",
+      "district": "Yenimahalle",
+      "location": {
+        "lat": 40.0188534,
+        "lng": 32.7659212
+      },
+      "type": ["metal"]
+    },
+    {
+      "id": 17,
+      "name": "TVC75 KAĞIT GERİ DÖNÜŞÜM",
+      "district": "Yenimahalle",
+      "location": {
+        "lat": 40.0218268,
+        "lng": 32.7692331
+      },
+      "type": ["paper", "cardboard", "plastic"]
+    }
+  ]
+}
