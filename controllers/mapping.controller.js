@@ -1,6 +1,8 @@
+const recycleCenters = require('../utils/recycle_centers.json');
+
 /**
  * Calculate Near Recycle Centers By Zipcode
- * @parmas zipcode
+ * @params zipcode
  * @returns arr []
  */
 function calculateByZipcode(zipcode) {
@@ -17,19 +19,42 @@ function calculateByZipcode(zipcode) {
 
 /**
  * Calculate Near Recycle Centers By Location
- * @parmas location
+ * @params location
  * @returns arr []
  */
-function calculateByLocation(location) {
-  //TODO: Calculate
-  return [
-    {
-      id: 1,
-      name: 'Arda Metal',
-      cordinates: { lat: -33.8599358, lng: 151.2090295 },
-      type: ['metal', 'paper'],
-    },
-  ];
+function calculateByLocation(location, type) {
+  const filtered = filterByMaterial(recycleCenters.ankara, type);
+
+  const filteredWithDist = filtered.map((rc) => ({
+    ...rc,
+    distance: calcDistBy2Dot(location, rc.location),
+  }));
+  return filteredWithDist.reduce((prev, curr) => {
+    return prev.distance < curr.distance ? prev : curr;
+  });
+}
+/**
+ * Filters Recycle Centers By Material Type
+ * @params location
+ * @returns arr []
+ */
+function filterByMaterial(recycle_centers, type) {
+  return recycle_centers.filter((rc) => {
+    if (rc.type.includes(type)) {
+      return rc;
+    }
+  });
+}
+
+/**
+ * Calculates Distance Between Two Cordinates
+ * @params cordinates
+ * @returns distance value
+ */
+function calcDistBy2Dot(cordA, cordB) {
+  return Math.sqrt(
+    Math.pow(cordA.lat - cordB.lat, 2) + Math.pow(cordA.lng - cordB.lng, 2)
+  );
 }
 
 module.exports = {
