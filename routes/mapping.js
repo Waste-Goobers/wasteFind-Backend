@@ -16,8 +16,8 @@ router.post('/zipcode', (req, res, next) => {
       });
     }
   } catch (e) {
-    res.status(406);
-    res.send('Wrong or Missing Zipcode Try again');
+    console.error(e);
+    res.status(406).send('Wrong or Missing Zipcode Try again');
   }
 });
 
