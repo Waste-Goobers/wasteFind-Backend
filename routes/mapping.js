@@ -31,7 +31,8 @@ router.post('/location', (req, res, next) => {
     if (req.body.location) {
       res.send({
         recycle_centers: mappingController.calculateByLocation(
-          req.body.location
+          req.body.location,
+          req.body.type
         ),
       });
     }
