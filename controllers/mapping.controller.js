@@ -3,7 +3,7 @@
   *importing recycle_Centers from "../utils / recycle_centers.json"
  */
 
-const recycle_Centers = require('../utils/recycle_centers.json');
+const recycleCenters = require('../utils/recycle_centers.json');
 
 /*   
 
@@ -21,7 +21,7 @@ const zipcodesOfDistricts = require('../utils/zipcodesOfDistricts.json');
  */
 function calculateByZipcode(zipcode) {
   //TODO: Calculate
-  const RecycleCentersAnkara = recycle_Centers.ankara;
+  const RecycleCentersAnkara = recycleCenters.ankara;
   const DistrictZipcodesAnkara = zipcodesOfDistricts;
   return filterByDistricts();
 
