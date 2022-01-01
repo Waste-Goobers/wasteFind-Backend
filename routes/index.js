@@ -9,13 +9,13 @@ router.get('/', function (req, res, next) {
 });
 
 /* TEST Backend Webservice Request */
-router.get('/ping-web-service', async (req, res, next) => {
+/*router.get('/ping-web-service', async (req, res, next) => {
   try {
     const response = await axios.get('http://localhost:3002/');
     res.send(response.data);
   } catch (error) {
     res.send({ error: error });
   }
-});
+});*/
 
 module.exports = router;
