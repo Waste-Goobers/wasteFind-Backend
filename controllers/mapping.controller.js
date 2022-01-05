@@ -12,15 +12,12 @@ const recycleCenters = require('../utils/recycle_centers.json');
 
 const zipcodesOfDistricts = require('../utils/zipcodesOfDistricts.json');
 
-
-
 /**
  * Calculate Near Recycle Centers By Zipcode
  * @params zipcode
  * @returns arr []
  */
 function calculateByZipcode(zipcode) {
-  //TODO: Calculate
   const RecycleCentersAnkara = recycleCenters.ankara;
   const DistrictZipcodesAnkara = zipcodesOfDistricts;
   return filterByDistricts();
@@ -34,11 +31,11 @@ function calculateByZipcode(zipcode) {
   }
 
   function filterByDistricts() {
-
-    return RecycleCentersAnkara.filter(recycleCenter => recycleCenter.district == findDistrictOfZipcode(zipcode));
-
+    return RecycleCentersAnkara.filter(
+      (recycleCenter) =>
+        recycleCenter.district == findDistrictOfZipcode(zipcode)
+    );
   }
-
 }
 
 /**
