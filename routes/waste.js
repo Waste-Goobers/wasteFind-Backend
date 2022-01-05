@@ -4,13 +4,14 @@ const router = express.Router();
 const fs = require('fs');
 const axios = require('axios');
 const FormData = require('form-data');
+const middleware = require('../middleware/user.middleware');
 
 /**
  * Test endpoint for is webservice alive
  * @request GET
  * @response pong
  */
-router.get('/ping', async (req, res) => {
+router.get('/ping', middleware.decodeToken, async (req, res) => {
   try {
     const response = await axios.get('http://127.0.0.1:5000/ping');
     res.send(response.data);
@@ -26,6 +27,7 @@ router.get('/ping', async (req, res) => {
  */
 router.post(
   '/photo-upload',
+  middleware.decodeToken,
   multer({ storage: multer.memoryStorage() }).single('file'),
   async (req, res) => {
     if (req.file) {
