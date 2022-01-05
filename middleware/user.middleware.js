@@ -19,8 +19,8 @@ class Middleware {
           message: 'Unauthorized request, You have no permission to do that!',
         });
       } catch (e) {
-        return res.status(500).send({
-          message: 'Internal Server Error',
+        return res.status(401).send({
+          message: 'Invalid Token or Bad Request',
         });
       }
     } else {
