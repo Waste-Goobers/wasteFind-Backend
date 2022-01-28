@@ -9,7 +9,7 @@ const middleware = require('../middleware/user.middleware');
  * @body { "zipcode":"06370" }
  * @returns  obj { recycle_centers:[] }
  */
-router.post('/zipcode', middleware.decodeToken, (req, res, next) => {
+router.post('/zipcode', (req, res, next) => {
   try {
     if (req.body.zipcode) {
       res.send({

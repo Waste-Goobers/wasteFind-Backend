@@ -42,7 +42,7 @@
     },
     {
       "id": 5,
-      "name": "Ankara Çankaya Hurda",
+      "name": "Hurda Maltepe Geri Dönüşüm",
       "district": "Çankaya",
       "location": {
         "lat": 39.9466508,
@@ -65,8 +65,8 @@
       "name": "Kemaloğlu Hurdacılık - Metal - Malzeme - Ankara Hurda",
       "district": "Yenimahalle",
       "location": {
-        "lat": 39.892379,
-        "lng": 32.7677681
+        "lat": 39.991648,
+        "lng": 32.7407483
       },
       "type": ["metal"]
     },
